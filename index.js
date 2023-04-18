@@ -5,5 +5,5 @@ app.all('/', (req, res) => {
     res.send('Yo!')
 })
 
-app.use('static',express.static('interconn'));
+app.use('/static',express.static('interconn'));
 app.listen(process.env.PORT || 3000)
